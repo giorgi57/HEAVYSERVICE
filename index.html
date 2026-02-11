@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEAVY SERVICE | გამართული ვერსია</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">🚜 HEAVY<span>SERVICE</span></div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+                <div class="burger" id="burger-btn">
+                    <span></span><span></span><span></span>
+                </div>
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="#services">სერვისები</a></li>
+                    <li><a href="#projects">პროექტები</a></li>
+                    <li><a href="#contact">კონტაქტი</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-container">
+            <h1>პროფესიონალური <br> <span>მძიმე ტექნიკა</span></h1>
+            <p>მიწის სამუშაოები და მასალების მიწოდება 24/7</p>
+            <a href="tel:555123456" class="btn-main">დაგვიკავშირდით</a>
+        </div>
+    </header>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">ჩვენი სერვისები</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box">🚜</div>
+                    <h3>მიწის სამუშაოები</h3>
+                    <p>საძირკვლის ამოღება, ტერიტორიის მოსწორება და გაწმენდა.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box">🚚</div>
+                    <h3>ტრანსპორტირება</h3>
+                    <p>ბალასტის, ქვიშის და ხრეშის ადგილზე მიწოდება.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box">🛠️</div>
+                    <h3>ტექნიკის დაქირავება</h3>
+                    <p>გამართული ტექნიკა გამოცდილ ოპერატორებთან ერთად.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">შესრულებული პროექტები</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1541625602330-2277a1cd43a7?q=80&w=800" alt="Work 1">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="project-card" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1574125821087-124e71b7c25c?q=80&w=800" alt="Work 2">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="project-card" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1581094120978-e58e40ee07c1?q=80&w=800" alt="Work 3">
+                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <h3>🚜 HEAVY<span>SERVICE</span></h3>
+                <p>თქვენი სანდო პარტნიორი მძიმე ტექნიკის სფეროში მთელი საქართველოს მასშტაბით.</p>
+            </div>
+            <div class="footer-col info">
+                <h4>კონტაქტი</h4>
+                <p><i class="fas fa-phone"></i> +995 555 12 34 56</p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp ჩატი</p>
+                <p><i class="fas fa-map-marker-alt"></i> თბილისი, საქართველო</p>
+            </div>
+            <div class="footer-col social">
+                <h4>მოგვყევით</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Heavy Service. ყველა უფლება დაცულია.</p>
+        </div>
+    </footer>
+
+    <div class="floating-btns">
+        <a href="tel:555123456" class="f-btn call"><i class="fas fa-phone"></i></a>
+        <a href="#" class="f-btn fb"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="f-btn wa"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
